@@ -38,7 +38,7 @@ class Sentence(Base):
     text = Column(Text, nullable=False)
     speaker = Column(String(128))
     emotion = Column(String(32))
-    emotion_vector = Column(String(64))
+    emotion_vector = Column(Text)
     audio_duration = Column(Float)
     audio_path = Column(String(512))
 

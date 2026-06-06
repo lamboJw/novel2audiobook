@@ -13,7 +13,6 @@ dependencies = [
     "ebooklib>=0.18",
     "beautifulsoup4>=4.12",
     "lxml>=5.0",
-    "pydub>=0.25",
     "python-multipart>=0.0.12",
 ]
 
