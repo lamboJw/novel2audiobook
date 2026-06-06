@@ -1,0 +1,50 @@
+[
+  {
+    "name": "青年男声_01",
+    "gender": "male",
+    "age_group": "young",
+    "description": "清亮爽朗的青年男声，适合20-30岁正面主角",
+    "audio_path": "voice_library/samples/male_young_01.wav",
+    "source": "placeholder"
+  },
+  {
+    "name": "中年男声_01",
+    "gender": "male",
+    "age_group": "middle",
+    "description": "沉稳厚重的中年男声，适合掌门/父亲类角色",
+    "audio_path": "voice_library/samples/male_mid_01.wav",
+    "source": "placeholder"
+  },
+  {
+    "name": "老年男声_01",
+    "gender": "male",
+    "age_group": "elderly",
+    "description": "苍老沙哑的老年男声，适合长者/隐士",
+    "audio_path": "voice_library/samples/male_old_01.wav",
+    "source": "placeholder"
+  },
+  {
+    "name": "青年女声_01",
+    "gender": "female",
+    "age_group": "young",
+    "description": "甜美清脆的青年女声，适合女主角",
+    "audio_path": "voice_library/samples/female_young_01.wav",
+    "source": "placeholder"
+  },
+  {
+    "name": "中年女声_01",
+    "gender": "female",
+    "age_group": "middle",
+    "description": "温婉柔和的中年女声，适合母亲/师娘",
+    "audio_path": "voice_library/samples/female_mid_01.wav",
+    "source": "placeholder"
+  },
+  {
+    "name": "旁白_男_01",
+    "gender": "male",
+    "age_group": "middle",
+    "description": "中性沉稳的旁白叙事音色",
+    "audio_path": "voice_library/samples/narrator_male_01.wav",
+    "source": "placeholder"
+  }
+]
