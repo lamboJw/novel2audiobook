@@ -33,8 +33,32 @@ class LLMClient:
                     raise
                 await asyncio.sleep(2**attempt)
 
-    async def chat_json(self, system_prompt: str, user_prompt: str) -> dict:
+    async def chat_json(self, system_prompt: str, user_prompt: str) -> dict | list:
         text = await self.chat(system_prompt, user_prompt)
-        if text.startswith("```"):
-            text = text.strip("`").removeprefix("json").strip()
-        return json.loads(text)
+        return self._extract_json(text)
+
+    @staticmethod
+    def _extract_json(text: str) -> dict | list:
+        import re
+        text = text.strip()
+        # try direct parse
+        try:
+            return json.loads(text)
+        except json.JSONDecodeError:
+            pass
+        # try extracting from markdown code block
+        m = re.search(r"```(?:json)?\s*\n?(.*?)\n?```", text, re.DOTALL)
+        if m:
+            try:
+                return json.loads(m.group(1).strip())
+            except json.JSONDecodeError:
+                pass
+        # try finding first array or object
+        for start, end, brace in [(text.find("["), text.rfind("]"), "[]"),
+                                   (text.find("{"), text.rfind("}"), "{}")]:
+            if start != -1 and end > start:
+                try:
+                    return json.loads(text[start:end + 1])
+                except json.JSONDecodeError:
+                    pass
+        raise json.JSONDecodeError(f"Failed to extract JSON from: {text[:200]}...", text, 0)

@@ -1,4 +1,5 @@
-from sqlalchemy import Column, Integer, BigInteger, String, Text, Float, Enum, DateTime, JSON, ForeignKey, LONGTEXT
+from sqlalchemy import Column, Integer, BigInteger, String, Text, Float, Enum, DateTime, JSON, ForeignKey
+from sqlalchemy.dialects.mysql import LONGTEXT
 from sqlalchemy.sql import func
 from src.database import Base
 
