@@ -1,5 +1,9 @@
+import re
 from abc import ABC, abstractmethod
 from dataclasses import dataclass, field
+
+
+SENTENCE_RE = re.compile(r"[^。！？\n]+[。！？]|[^。！？\n]+$")
 
 
 @dataclass

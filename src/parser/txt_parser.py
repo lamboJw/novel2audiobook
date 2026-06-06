@@ -1,8 +1,7 @@
 import re
-from src.parser.base import NovelParser, Chapter
+from src.parser.base import NovelParser, Chapter, SENTENCE_RE
 
 CHAPTER_RE = re.compile(r"^第[一二三四五六七八九十百千零0-9]+章.*$", re.MULTILINE)
-SENTENCE_RE = re.compile(r"[^。！？\n]+[。！？]|[^。！？\n]+$")
 
 
 class TxtParser(NovelParser):

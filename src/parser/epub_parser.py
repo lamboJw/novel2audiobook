@@ -1,9 +1,6 @@
 from ebooklib import epub
 from bs4 import BeautifulSoup
-from src.parser.base import NovelParser, Chapter
-import re
-
-SENTENCE_RE = re.compile(r"[^。！？\n]+[。！？]|[^。！？\n]+$")
+from src.parser.base import NovelParser, Chapter, SENTENCE_RE
 
 
 class EpubParser(NovelParser):
@@ -12,7 +9,7 @@ class EpubParser(NovelParser):
         chapters = []
         index = 0
         for item in book.get_items():
-            if item.get_type() == 9:  # ITEM_DOCUMENT
+            if item.get_type() == epub.ITEM_DOCUMENT:
                 soup = BeautifulSoup(item.get_content(), "html.parser")
                 text = soup.get_text().strip()
                 if not text:
