@@ -31,7 +31,7 @@ class CharacterAnalyzer:
             char["base_profile"] = profile.get("base_profile", {})
             self._save_character(novel_id, char)
 
-        novel = self.db.query(Novel).get(novel_id)
+        novel = self.db.get(Novel, novel_id)
         if novel:
             novel.status = "characters_analyzed"
             self.db.commit()
