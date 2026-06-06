@@ -1,50 +1,20 @@
 [
-  {
-    "name": "青年男声_01",
-    "gender": "male",
-    "age_group": "young",
-    "description": "清亮爽朗的青年男声，适合20-30岁正面主角",
-    "audio_path": "voice_library/samples/male_young_01.wav",
-    "source": "placeholder"
-  },
-  {
-    "name": "中年男声_01",
-    "gender": "male",
-    "age_group": "middle",
-    "description": "沉稳厚重的中年男声，适合掌门/父亲类角色",
-    "audio_path": "voice_library/samples/male_mid_01.wav",
-    "source": "placeholder"
-  },
-  {
-    "name": "老年男声_01",
-    "gender": "male",
-    "age_group": "elderly",
-    "description": "苍老沙哑的老年男声，适合长者/隐士",
-    "audio_path": "voice_library/samples/male_old_01.wav",
-    "source": "placeholder"
-  },
-  {
-    "name": "青年女声_01",
-    "gender": "female",
-    "age_group": "young",
-    "description": "甜美清脆的青年女声，适合女主角",
-    "audio_path": "voice_library/samples/female_young_01.wav",
-    "source": "placeholder"
-  },
-  {
-    "name": "中年女声_01",
-    "gender": "female",
-    "age_group": "middle",
-    "description": "温婉柔和的中年女声，适合母亲/师娘",
-    "audio_path": "voice_library/samples/female_mid_01.wav",
-    "source": "placeholder"
-  },
-  {
-    "name": "旁白_男_01",
-    "gender": "male",
-    "age_group": "middle",
-    "description": "中性沉稳的旁白叙事音色",
-    "audio_path": "voice_library/samples/narrator_male_01.wav",
-    "source": "placeholder"
-  }
+  {"name": "SSB0393 (女童)", "gender": "female", "age_group": "child", "description": "AISHELL-3 speaker SSB0393, female, child", "audio_path": "voice_library/samples/aishell3_SSB0393.wav", "source": "AISHELL-3"},
+  {"name": "SSB1126 (女童)", "gender": "female", "age_group": "child", "description": "AISHELL-3 speaker SSB1126, female, child", "audio_path": "voice_library/samples/aishell3_SSB1126.wav", "source": "AISHELL-3"},
+  {"name": "SSB0711 (青年女)", "gender": "female", "age_group": "young", "description": "AISHELL-3 speaker SSB0711, female, young", "audio_path": "voice_library/samples/aishell3_SSB0711.wav", "source": "AISHELL-3"},
+  {"name": "SSB1846 (青年女)", "gender": "female", "age_group": "young", "description": "AISHELL-3 speaker SSB1846, female, young", "audio_path": "voice_library/samples/aishell3_SSB1846.wav", "source": "AISHELL-3"},
+  {"name": "SSB0427 (青年女)", "gender": "female", "age_group": "young", "description": "AISHELL-3 speaker SSB0427, female, young", "audio_path": "voice_library/samples/aishell3_SSB0427.wav", "source": "AISHELL-3"},
+  {"name": "SSB1020 (青年男)", "gender": "male", "age_group": "young", "description": "AISHELL-3 speaker SSB1020, male, young", "audio_path": "voice_library/samples/aishell3_SSB1020.wav", "source": "AISHELL-3"},
+  {"name": "SSB0273 (青年男)", "gender": "male", "age_group": "young", "description": "AISHELL-3 speaker SSB0273, male, young", "audio_path": "voice_library/samples/aishell3_SSB0273.wav", "source": "AISHELL-3"},
+  {"name": "SSB1328 (青年男)", "gender": "male", "age_group": "young", "description": "AISHELL-3 speaker SSB1328, male, young", "audio_path": "voice_library/samples/aishell3_SSB1328.wav", "source": "AISHELL-3"},
+  {"name": "SSB0539 (中年女)", "gender": "female", "age_group": "middle", "description": "AISHELL-3 speaker SSB0539, female, middle", "audio_path": "voice_library/samples/aishell3_SSB0539.wav", "source": "AISHELL-3"},
+  {"name": "SSB0267 (中年女)", "gender": "female", "age_group": "middle", "description": "AISHELL-3 speaker SSB0267, female, middle", "audio_path": "voice_library/samples/aishell3_SSB0267.wav", "source": "AISHELL-3"},
+  {"name": "SSB0341 (中年女)", "gender": "female", "age_group": "middle", "description": "AISHELL-3 speaker SSB0341, female, middle", "audio_path": "voice_library/samples/aishell3_SSB0341.wav", "source": "AISHELL-3"},
+  {"name": "SSB0407 (中年男)", "gender": "male", "age_group": "middle", "description": "AISHELL-3 speaker SSB0407, male, middle", "audio_path": "voice_library/samples/aishell3_SSB0407.wav", "source": "AISHELL-3"},
+  {"name": "SSB0590 (中年男)", "gender": "male", "age_group": "middle", "description": "AISHELL-3 speaker SSB0590, male, middle", "audio_path": "voice_library/samples/aishell3_SSB0590.wav", "source": "AISHELL-3"},
+  {"name": "SSB0784 (中年男)", "gender": "male", "age_group": "middle", "description": "AISHELL-3 speaker SSB0784, male, middle", "audio_path": "voice_library/samples/aishell3_SSB0784.wav", "source": "AISHELL-3"},
+  {"name": "SSB1110 (老年女)", "gender": "female", "age_group": "elderly", "description": "AISHELL-3 speaker SSB1110, female, elderly", "audio_path": "voice_library/samples/aishell3_SSB1110.wav", "source": "AISHELL-3"},
+  {"name": "SSB0309 (老年女)", "gender": "female", "age_group": "elderly", "description": "AISHELL-3 speaker SSB0309, female, elderly", "audio_path": "voice_library/samples/aishell3_SSB0309.wav", "source": "AISHELL-3"},
+  {"name": "SSB0606 (老年女)", "gender": "female", "age_group": "elderly", "description": "AISHELL-3 speaker SSB0606, female, elderly", "audio_path": "voice_library/samples/aishell3_SSB0606.wav", "source": "AISHELL-3"},
+  {"name": "SSB0434 (老年男)", "gender": "male", "age_group": "elderly", "description": "AISHELL-3 speaker SSB0434, male, elderly", "audio_path": "voice_library/samples/aishell3_SSB0434.wav", "source": "AISHELL-3"}
 ]
