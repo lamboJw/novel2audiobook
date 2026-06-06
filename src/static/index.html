@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>有声小说播放器</title>
+<link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+<div id="app">
+  <aside id="sidebar">
+    <h2>书架</h2>
+    <button onclick="showUpload()">+ 导入小说</button>
+    <ul id="novel-list"></ul>
+    <hr>
+    <h3>章节</h3>
+    <ul id="chapter-list"></ul>
+  </aside>
+  <main id="content">
+    <div id="reader"></div>
+  </main>
+  <footer id="player-bar">
+    <button id="play-btn">▶</button>
+    <span id="sentence-info"></span>
+  </footer>
+</div>
+<div id="upload-modal" class="modal">
+  <div class="modal-content">
+    <h3>导入小说</h3>
+    <form id="upload-form">
+      <input type="file" id="file-input" accept=".txt,.epub,.mobi" required>
+      <input type="text" id="title-input" placeholder="书名" required>
+      <input type="text" id="author-input" placeholder="作者">
+      <button type="submit">导入</button>
+    </form>
+  </div>
+</div>
+<script src="/static/app.js"></script>
+</body>
+</html>
