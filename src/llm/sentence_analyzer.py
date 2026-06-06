@@ -55,7 +55,7 @@ class SentenceAnalyzer:
         numbered = "\n".join(f"{i + start_idx}. {s}" for i, s in enumerate(sentences))
 
         prompt = (f"分析以下每句话的说话人和情感。\n"
-                  f"说话人：角色名或"旁白"\n"
+                  f"说话人：角色名或'旁白'\n"
                   f"情感：高兴/愤怒/悲伤/害怕/厌恶/忧郁/惊讶/平静\n"
                   f"{char_context}\n\n"
                   f"格式要求：每行输出 序号|说话人|情感\n\n"
